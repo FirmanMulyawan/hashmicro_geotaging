@@ -1,0 +1,25 @@
+stages:
+  - build_and_distribute
+
+.fastlane_job_template:
+  stage: build_and_distribute
+  image: ghcr.io/cirruslabs/flutter:3.41.7
+  before_script:
+    - apt-get update && apt-get install -y ruby-full ruby-dev build-essential
+    - gem install bundler
+    - cd android && bundle install && cd ..
+    
+    - echo "$CREDENTIAL_FILE_CONTENT" > firebase_credentials.json
+    - export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebase_credentials.json
+  script:
+    - cd android
+    - bundle exec fastlane distribute_testing flavor:$FLAVOR target:$TARGET_FILE
+
+# Job untuk Staging
+build_android_staging:
+  extends: .fastlane_job_template
+  variables:
+    FLAVOR: "staging"
+    TARGET_FILE: "lib/main_staging.dart"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "staging" && $CI_PIPELINE_SOURCE == "push"'

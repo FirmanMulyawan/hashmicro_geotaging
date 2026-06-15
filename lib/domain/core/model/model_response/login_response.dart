@@ -1,0 +1,53 @@
+class LoginResponse {
+  int? id;
+  String? username;
+  String? email;
+  String? firstName;
+  String? lastName;
+  String? gender;
+  String? image;
+  String? accessToken;
+  String? refreshToken;
+  String? message;
+
+  LoginResponse(
+      {this.id,
+      this.username,
+      this.email,
+      this.firstName,
+      this.lastName,
+      this.gender,
+      this.image,
+      this.accessToken,
+      this.refreshToken,
+      this.message});
+
+  LoginResponse.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    username = json['username'];
+    email = json['email'];
+    firstName = json['firstName'];
+    lastName = json['lastName'];
+    gender = json['gender'];
+    image = json['image'];
+    accessToken = json['accessToken'];
+    refreshToken = json['refreshToken'];
+    message = json['message'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['username'] = username;
+    data['email'] = email;
+    data['firstName'] = firstName;
+    data['lastName'] = lastName;
+    data['gender'] = gender;
+    data['image'] = image;
+    data['accessToken'] = accessToken;
+    data['refreshToken'] = refreshToken;
+    data['message'] = message;
+
+    return data;
+  }
+}

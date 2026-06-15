@@ -1,0 +1,82 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:2599891849544336321",
+      "lastPropertyId": "11:4328767069488482538",
+      "name": "LocalOutlet",
+      "properties": [
+        {
+          "id": "1:1376805503561498808",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3002375310847627291",
+          "name": "userId",
+          "type": 6
+        },
+        {
+          "id": "3:4425978140995024838",
+          "name": "nameOutlet",
+          "type": 9
+        },
+        {
+          "id": "4:3974127522533181519",
+          "name": "latitude",
+          "type": 9
+        },
+        {
+          "id": "5:6137864039725494204",
+          "name": "longitude",
+          "type": 9
+        },
+        {
+          "id": "6:2994755807437625910",
+          "name": "address",
+          "type": 9
+        },
+        {
+          "id": "7:2853414636912836578",
+          "name": "imageUrl",
+          "type": 9
+        },
+        {
+          "id": "8:8251792396267962807",
+          "name": "clockIn",
+          "type": 9
+        },
+        {
+          "id": "9:7845370802278231778",
+          "name": "clockOut",
+          "type": 9
+        },
+        {
+          "id": "10:5141847415843083919",
+          "name": "userLatitude",
+          "type": 9
+        },
+        {
+          "id": "11:4328767069488482538",
+          "name": "userLongitude",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:2599891849544336321",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

@@ -1,0 +1,109 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // ============ debug
+        {
+            "name": "staging debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "args": [
+                "--flavor",
+                "staging"
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "demo debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_demo.dart",
+            "args": [
+                "--flavor",
+                "demo"
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "staging debug mobile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            // "deviceId": "10DE5E0DAM0009H",
+            "args": [
+                "--flavor",
+                "staging"
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "staging debug tablet",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "deviceId": "R9RW103NFWA",
+            "args": [
+                "--flavor",
+                "staging"
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "production debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--flavor",
+                "production"
+            ],
+            "flutterMode": "debug"
+        },
+        // ============ release
+        {
+            "name": "staging release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "args": [
+                "--flavor",
+                "staging"
+            ],
+            "flutterMode": "release"
+        },
+        {
+            "name": "demo release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_demo.dart",
+            "args": [
+                "--flavor",
+                "demo"
+            ],
+            "flutterMode": "release"
+        },
+        {
+            "name": "production release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--flavor",
+                "production"
+            ],
+            "flutterMode": "release"
+        },
+    ],
+    "compounds": [
+        {
+            "name": "All Device",
+            "configurations": [
+                "staging debug mobile",
+                "staging debug tablet"
+            ]
+        }
+    ]
+}
