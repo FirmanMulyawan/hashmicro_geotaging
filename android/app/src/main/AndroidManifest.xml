@@ -62,7 +62,6 @@ android:maxSdkVersion="32"  />
             android:value="2" />
             <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="REMOVED_SECRET"/>
-               <!-- REMOVED -->
                <!-- REMOVED_SECRET -->
                <meta-data
              android:name="com.google.android.gms.version"

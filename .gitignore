@@ -48,3 +48,4 @@ app.*.map.json
 
 # Dev Tools (development only - do not push)
 lib/features/dev_tools/
+replacements.txt
